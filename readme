@@ -1,0 +1,14 @@
+Problem statement
+
+Design a notification service -
+
+where there are various types/formats in which you can send the message - for ex- text message, QR messages
+
+and there are various ways in which you send the notification- for ex - Email, whatsApp, Telegram
+
+* NotificationSender interface - > there cud be various senders Email, whatsApp, Telegram, they will implement the sendNotification()
+    sendNotification();
+
+
+* We need to create an abstract class "Notification" on the types of notifications we have - Text, QR
+    This will have a NotificationSender object that wud help in sending the Notification of the type requested
